@@ -1,10 +1,10 @@
 <?php
 
-class empleado{
-    public $nombre;
-    public $sueldo;
+class Empleado{
+    public String $nombre;
+    public float $sueldo;
     
-    function iniciar ($nom,$suel){
+    function iniciar (String $nom,float $suel){
         $this->nombre = $nom;
         $this->sueldo = $suel;
     }
@@ -18,11 +18,11 @@ class empleado{
         }
     }
 }
-    $empl1 = new empleado();
-    $empl2 = new empleado();
+    $empl1 = new Empleado();
+    $empl2 = new Empleado();
     $empl1->iniciar("Gina",4500);
     $empl2 ->iniciar("Raul",9700);
-    echo $empl1->pagar();
+    echo "<p2>". $empl1->pagar() . "</p2>";
     echo $empl2->pagar();
 
 

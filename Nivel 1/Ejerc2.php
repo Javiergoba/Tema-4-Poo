@@ -1,9 +1,9 @@
 <?php
 class Shape {
-    public $ancho;
-    public $alto;
+    public float $ancho;
+    public float $alto;
 
-    public function __construct($an,$al){// definimos el constructor con los datos
+    public function __construct(float $an,float $al){// definimos el constructor con los datos
         $this->ancho=$an;
         $this->alto=$al;
     }
@@ -13,7 +13,8 @@ class Shape {
 class Triangulo extends Shape{// creamos una subclase para cada area que vamos a calcular.
 
         public function area(){// creamos la funtcion area 
-            return "El area del Trianglo es: " . ($this-> ancho * $this-> alto)/2 . "<br>"; // definimos la funcion return para que nos devuelva los datos con la funcion echo $Triangulo->area();
+            return "El area del Trianglo es: " . ($this-> ancho * $this-> alto)/2 . "<br>";
+             // definimos la funcion return para que nos devuelva los datos con la funcion echo $Triangulo->area();
         }
         
     } 
